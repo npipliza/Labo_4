@@ -1,0 +1,30 @@
+<main class="form-signin">
+  <div class="login-wrap">
+    <div class="login-html">
+      <h1 class="h2 mb-2">{{ title }}</h1>
+
+      <label for="floatingInput">Edad uno
+        <div class="form-signin">
+          <input type="number" class="w-50 ml-5 form-control" id="floatingInput" placeholder="Edad Uno" [(ngModel)]="numeroUno">
+        </div>
+    </label>
+
+      <label for="floatingPassword">Edad dos
+        <div class="form-signin">
+          <input type="number" class="w-50 ml-5 form-control" id="floatingPassword" placeholder="Edad Dos" [(ngModel)]="numeroDos">
+        </div>
+      </label>
+
+      <hr>
+      <h3 class=""> La suma es: {{ suma }} <br> El promedio de {{ suma }} es: {{ promedio }} </h3>
+      <hr>
+
+      <div class="mt-2">
+        <button class="w-45 btn mr-2 btn-info" (click)="calcular()" >Calcular</button>
+        <button class="w-45 btn btn-info" (click)="limpiar()" >Limpiar</button>
+      </div>  
+    </div>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
